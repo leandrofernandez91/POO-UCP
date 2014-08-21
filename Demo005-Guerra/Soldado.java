@@ -21,14 +21,14 @@ public class Soldado
                 enemigo.danio(enemigo.danioParaSoldado());
         }
         
-        public int danioParaTanque(){
-                return 700;
+        public double danioParaTanque(){
+                return 700*usarEscudo();
             }
-        public int danioParaSoldado(){
-                return 700;
+        public double danioParaSoldado(){
+                return 700*usarEscudo();
             }        
-        public int danioParaAvion(){
-                return 1000;
+        public double danioParaAvion(){
+                return 1000*usarEscudo();
             }        
   
 

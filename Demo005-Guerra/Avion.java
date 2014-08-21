@@ -21,14 +21,14 @@ public class Avion extends Participante
         enemigo.danio(enemigo.danioParaAvion());
         }
         
-        public int danioParaTanque(){
-                return 700;
+        public double danioParaTanque(){
+                return 700*usarEscudo();
             }
-        public int danioParaSoldado(){
-                return 350;
+        public double danioParaSoldado(){
+                return 350*usarEscudo();
             }        
-        public int danioParaAvion(){
-                return 700;
+        public double danioParaAvion(){
+                return 700*usarEscudo();
             }        
   
 

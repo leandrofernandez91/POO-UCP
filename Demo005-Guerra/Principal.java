@@ -5,7 +5,7 @@ public class Principal
     public static void main(){ 
         
         //Configuracion
-        int cantidadParticipantes = 30;
+        int cantidadParticipantes = 5;
         
         //Creando los participantes
         ArrayList<Participante> participantes = new  ArrayList<Participante> ();
@@ -34,6 +34,9 @@ public class Principal
                         + enemigo.getNombreCompleto()
                         + " vida "
                         + enemigo.getVida());
+            if (enemigo.getAviso()){
+                System.out.println("Escudo del participante "+ enemigo.getNombreCompleto()+ "utilizado");}
+                      
             
             //Preguntar si murio
             if (!enemigo.estaVivo()){
